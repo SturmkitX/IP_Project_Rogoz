@@ -1,0 +1,775 @@
+starter.cpp: In function ‘cv::Mat computeRectified(cv::Mat, cv::Vec3b, std::vector<float>&)’:
+starter.cpp:157:53: error: no match for ‘operator-’ (operand types are ‘float’ and ‘cv::Vec3b {aka cv::Vec<unsigned char, 3>}’)
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                   ~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/opencv2/core.hpp:57:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/matx.hpp:1212:17: note: candidate: template<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator-(const cv::Matx<_Tp, m, n>&, const cv::Matx<_Tp, m, n>&)
+ Matx<_Tp, m, n> operator - (const Matx<_Tp, m, n>& a, const Matx<_Tp, m, n>& b)
+                 ^~~~~~~~
+/usr/include/opencv2/core/matx.hpp:1212:17: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Matx<_Tp, m, n>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:57:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/matx.hpp:1278:17: note: candidate: template<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator-(const cv::Matx<_Tp, m, n>&)
+ Matx<_Tp, m, n> operator - (const Matx<_Tp, m, n>& a)
+                 ^~~~~~~~
+/usr/include/opencv2/core/matx.hpp:1278:17: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Matx<_Tp, m, n>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:57:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/matx.hpp:1340:14: note: candidate: template<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator-(const cv::Vec<_Tp, m>&, const cv::Vec<_Tp, m>&)
+ Vec<_Tp, cn> operator - (const Vec<_Tp, cn>& a, const Vec<_Tp, cn>& b)
+              ^~~~~~~~
+/usr/include/opencv2/core/matx.hpp:1340:14: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Vec<_Tp, m>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:57:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/matx.hpp:1451:14: note: candidate: template<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator-(const cv::Vec<_Tp, m>&)
+ Vec<_Tp, cn> operator - (const Vec<_Tp, cn>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/matx.hpp:1451:14: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Vec<_Tp, m>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1019:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator-(const cv::Complex<_Tp>&, const cv::Complex<_Tp>&)
+ Complex<_Tp> operator - (const Complex<_Tp>& a, const Complex<_Tp>& b)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1019:14: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Complex<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1032:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator-(const cv::Complex<_Tp>&)
+ Complex<_Tp> operator - (const Complex<_Tp>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1032:14: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Complex<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1062:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator-(const cv::Complex<_Tp>&, _Tp)
+ Complex<_Tp> operator - (const Complex<_Tp>& a, _Tp b)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1062:14: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Complex<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1072:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator-(_Tp, const cv::Complex<_Tp>&)
+ Complex<_Tp> operator - (_Tp b, const Complex<_Tp>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1072:14: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   ‘cv::Vec3b {aka cv::Vec<unsigned char, 3>}’ is not derived from ‘const cv::Complex<_Tp>’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1293:13: note: candidate: template<class _Tp> cv::Point_<_Tp> cv::operator-(const cv::Point_<_Tp>&, const cv::Point_<_Tp>&)
+ Point_<_Tp> operator - (const Point_<_Tp>& a, const Point_<_Tp>& b)
+             ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1293:13: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Point_<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1299:13: note: candidate: template<class _Tp> cv::Point_<_Tp> cv::operator-(const cv::Point_<_Tp>&)
+ Point_<_Tp> operator - (const Point_<_Tp>& a)
+             ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1299:13: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Point_<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1545:14: note: candidate: template<class _Tp> cv::Point3_<_Tp> cv::operator-(const cv::Point3_<_Tp>&, const cv::Point3_<_Tp>&)
+ Point3_<_Tp> operator - (const Point3_<_Tp>& a, const Point3_<_Tp>& b)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1545:14: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Point3_<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1551:14: note: candidate: template<class _Tp> cv::Point3_<_Tp> cv::operator-(const cv::Point3_<_Tp>&)
+ Point3_<_Tp> operator - (const Point3_<_Tp>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1551:14: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Point3_<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1735:12: note: candidate: template<class _Tp> cv::Size_<_Tp> cv::operator-(const cv::Size_<_Tp>&, const cv::Size_<_Tp>&)
+ Size_<_Tp> operator - (const Size_<_Tp>& a, const Size_<_Tp>& b)
+            ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1735:12: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Size_<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1921:12: note: candidate: template<class _Tp> cv::Rect_<_Tp> cv::operator-(const cv::Rect_<_Tp>&, const cv::Point_<_Tp>&)
+ Rect_<_Tp> operator - (const Rect_<_Tp>& a, const Point_<_Tp>& b)
+            ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1921:12: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Rect_<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:2054:7: note: candidate: cv::Range cv::operator-(const cv::Range&, int)
+ Range operator - (const Range& r1, int delta)
+       ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:2054:7: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::Range&’
+/usr/include/opencv2/core/types.hpp:2191:14: note: candidate: template<class _Tp> cv::Scalar_<_Tp> cv::operator-(const cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)
+ Scalar_<_Tp> operator - (const Scalar_<_Tp>& a, const Scalar_<_Tp>& b)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:2191:14: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Scalar_<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:2215:14: note: candidate: template<class _Tp> cv::Scalar_<_Tp> cv::operator-(const cv::Scalar_<_Tp>&)
+ Scalar_<_Tp> operator - (const Scalar_<_Tp>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:2215:14: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::Scalar_<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:59:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/mat.hpp:3561:20: note: candidate: cv::MatExpr cv::operator-(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator - (const Mat& a, const Mat& b);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3561:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::Mat&’
+/usr/include/opencv2/core/mat.hpp:3562:20: note: candidate: cv::MatExpr cv::operator-(const cv::Mat&, const Scalar&)
+ CV_EXPORTS MatExpr operator - (const Mat& a, const Scalar& s);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3562:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::Mat&’
+/usr/include/opencv2/core/mat.hpp:3563:20: note: candidate: cv::MatExpr cv::operator-(const Scalar&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator - (const Scalar& s, const Mat& a);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3563:20: note:   no known conversion for argument 2 from ‘cv::Vec3b {aka cv::Vec<unsigned char, 3>}’ to ‘const cv::Mat&’
+/usr/include/opencv2/core/mat.hpp:3564:20: note: candidate: cv::MatExpr cv::operator-(const cv::MatExpr&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator - (const MatExpr& e, const Mat& m);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3564:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatExpr&’
+/usr/include/opencv2/core/mat.hpp:3565:20: note: candidate: cv::MatExpr cv::operator-(const cv::Mat&, const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator - (const Mat& m, const MatExpr& e);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3565:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::Mat&’
+/usr/include/opencv2/core/mat.hpp:3566:20: note: candidate: cv::MatExpr cv::operator-(const cv::MatExpr&, const Scalar&)
+ CV_EXPORTS MatExpr operator - (const MatExpr& e, const Scalar& s);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3566:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatExpr&’
+/usr/include/opencv2/core/mat.hpp:3567:20: note: candidate: cv::MatExpr cv::operator-(const Scalar&, const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator - (const Scalar& s, const MatExpr& e);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3567:20: note:   no known conversion for argument 2 from ‘cv::Vec3b {aka cv::Vec<unsigned char, 3>}’ to ‘const cv::MatExpr&’
+/usr/include/opencv2/core/mat.hpp:3568:20: note: candidate: cv::MatExpr cv::operator-(const cv::MatExpr&, const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator - (const MatExpr& e1, const MatExpr& e2);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3568:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatExpr&’
+/usr/include/opencv2/core/mat.hpp:3570:20: note: candidate: cv::MatExpr cv::operator-(const cv::Mat&)
+ CV_EXPORTS MatExpr operator - (const Mat& m);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3570:20: note:   candidate expects 1 argument, 2 provided
+/usr/include/opencv2/core/mat.hpp:3571:20: note: candidate: cv::MatExpr cv::operator-(const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator - (const MatExpr& e);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3571:20: note:   candidate expects 1 argument, 2 provided
+In file included from /usr/include/opencv2/core/mat.hpp:3659:0,
+                 from /usr/include/opencv2/core.hpp:59,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/mat.inl.hpp:2730:11: note: candidate: ptrdiff_t cv::operator-(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ ptrdiff_t operator - (const MatConstIterator& b, const MatConstIterator& a)
+           ^~~~~~~~
+/usr/include/opencv2/core/mat.inl.hpp:2730:11: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatConstIterator&’
+/usr/include/opencv2/core/mat.inl.hpp:2755:18: note: candidate: cv::MatConstIterator cv::operator-(const cv::MatConstIterator&, ptrdiff_t)
+ MatConstIterator operator - (const MatConstIterator& a, ptrdiff_t ofs)
+                  ^~~~~~~~
+/usr/include/opencv2/core/mat.inl.hpp:2755:18: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatConstIterator&’
+/usr/include/opencv2/core/mat.inl.hpp:2903:24: note: candidate: template<class _Tp> cv::MatConstIterator_<_Tp> cv::operator-(const cv::MatConstIterator_<_Tp>&, ptrdiff_t)
+ MatConstIterator_<_Tp> operator - (const MatConstIterator_<_Tp>& a, ptrdiff_t ofs)
+                        ^~~~~~~~
+/usr/include/opencv2/core/mat.inl.hpp:2903:24: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::MatConstIterator_<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core/mat.hpp:3659:0,
+                 from /usr/include/opencv2/core.hpp:59,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/mat.inl.hpp:3040:19: note: candidate: template<class _Tp> cv::MatIterator_<_Tp> cv::operator-(const cv::MatIterator_<_Tp>&, ptrdiff_t)
+ MatIterator_<_Tp> operator - (const MatIterator_<_Tp>& a, ptrdiff_t ofs)
+                   ^~~~~~~~
+/usr/include/opencv2/core/mat.inl.hpp:3040:19: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::MatIterator_<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:60:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/persistence.hpp:1302:11: note: candidate: ptrdiff_t cv::operator-(const cv::FileNodeIterator&, const cv::FileNodeIterator&)
+ ptrdiff_t operator - (const FileNodeIterator& it1, const FileNodeIterator& it2)
+           ^~~~~~~~
+/usr/include/opencv2/core/persistence.hpp:1302:11: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::FileNodeIterator&’
+In file included from /usr/include/opencv2/core/utility.hpp:1237:0,
+                 from /usr/include/opencv2/core.hpp:3261,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/core_c.h:3157:41: note: candidate: template<class _Tp> ptrdiff_t cv::operator-(const cv::SeqIterator<_Tp>&, const cv::SeqIterator<_Tp>&)
+ template<typename _Tp> inline ptrdiff_t operator - (const SeqIterator<_Tp>& a,
+                                         ^~~~~~~~
+/usr/include/opencv2/core/core_c.h:3157:41: note:   template argument deduction/substitution failed:
+starter.cpp:157:55: note:   mismatched types ‘const cv::SeqIterator<_Tp>’ and ‘float’
+             sol.val[0] = (uchar)(((float)pix.val[0] - A) / chosenT + A);
+                                                       ^
+starter.cpp:158:53: error: no match for ‘operator-’ (operand types are ‘float’ and ‘cv::Vec3b {aka cv::Vec<unsigned char, 3>}’)
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                   ~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/opencv2/core.hpp:57:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/matx.hpp:1212:17: note: candidate: template<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator-(const cv::Matx<_Tp, m, n>&, const cv::Matx<_Tp, m, n>&)
+ Matx<_Tp, m, n> operator - (const Matx<_Tp, m, n>& a, const Matx<_Tp, m, n>& b)
+                 ^~~~~~~~
+/usr/include/opencv2/core/matx.hpp:1212:17: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Matx<_Tp, m, n>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:57:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/matx.hpp:1278:17: note: candidate: template<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator-(const cv::Matx<_Tp, m, n>&)
+ Matx<_Tp, m, n> operator - (const Matx<_Tp, m, n>& a)
+                 ^~~~~~~~
+/usr/include/opencv2/core/matx.hpp:1278:17: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Matx<_Tp, m, n>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:57:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/matx.hpp:1340:14: note: candidate: template<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator-(const cv::Vec<_Tp, m>&, const cv::Vec<_Tp, m>&)
+ Vec<_Tp, cn> operator - (const Vec<_Tp, cn>& a, const Vec<_Tp, cn>& b)
+              ^~~~~~~~
+/usr/include/opencv2/core/matx.hpp:1340:14: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Vec<_Tp, m>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:57:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/matx.hpp:1451:14: note: candidate: template<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator-(const cv::Vec<_Tp, m>&)
+ Vec<_Tp, cn> operator - (const Vec<_Tp, cn>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/matx.hpp:1451:14: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Vec<_Tp, m>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1019:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator-(const cv::Complex<_Tp>&, const cv::Complex<_Tp>&)
+ Complex<_Tp> operator - (const Complex<_Tp>& a, const Complex<_Tp>& b)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1019:14: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Complex<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1032:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator-(const cv::Complex<_Tp>&)
+ Complex<_Tp> operator - (const Complex<_Tp>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1032:14: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Complex<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1062:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator-(const cv::Complex<_Tp>&, _Tp)
+ Complex<_Tp> operator - (const Complex<_Tp>& a, _Tp b)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1062:14: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Complex<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1072:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator-(_Tp, const cv::Complex<_Tp>&)
+ Complex<_Tp> operator - (_Tp b, const Complex<_Tp>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1072:14: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   ‘cv::Vec3b {aka cv::Vec<unsigned char, 3>}’ is not derived from ‘const cv::Complex<_Tp>’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1293:13: note: candidate: template<class _Tp> cv::Point_<_Tp> cv::operator-(const cv::Point_<_Tp>&, const cv::Point_<_Tp>&)
+ Point_<_Tp> operator - (const Point_<_Tp>& a, const Point_<_Tp>& b)
+             ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1293:13: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Point_<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1299:13: note: candidate: template<class _Tp> cv::Point_<_Tp> cv::operator-(const cv::Point_<_Tp>&)
+ Point_<_Tp> operator - (const Point_<_Tp>& a)
+             ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1299:13: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Point_<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1545:14: note: candidate: template<class _Tp> cv::Point3_<_Tp> cv::operator-(const cv::Point3_<_Tp>&, const cv::Point3_<_Tp>&)
+ Point3_<_Tp> operator - (const Point3_<_Tp>& a, const Point3_<_Tp>& b)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1545:14: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Point3_<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1551:14: note: candidate: template<class _Tp> cv::Point3_<_Tp> cv::operator-(const cv::Point3_<_Tp>&)
+ Point3_<_Tp> operator - (const Point3_<_Tp>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1551:14: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Point3_<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1735:12: note: candidate: template<class _Tp> cv::Size_<_Tp> cv::operator-(const cv::Size_<_Tp>&, const cv::Size_<_Tp>&)
+ Size_<_Tp> operator - (const Size_<_Tp>& a, const Size_<_Tp>& b)
+            ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1735:12: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Size_<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1921:12: note: candidate: template<class _Tp> cv::Rect_<_Tp> cv::operator-(const cv::Rect_<_Tp>&, const cv::Point_<_Tp>&)
+ Rect_<_Tp> operator - (const Rect_<_Tp>& a, const Point_<_Tp>& b)
+            ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1921:12: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Rect_<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:2054:7: note: candidate: cv::Range cv::operator-(const cv::Range&, int)
+ Range operator - (const Range& r1, int delta)
+       ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:2054:7: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::Range&’
+/usr/include/opencv2/core/types.hpp:2191:14: note: candidate: template<class _Tp> cv::Scalar_<_Tp> cv::operator-(const cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)
+ Scalar_<_Tp> operator - (const Scalar_<_Tp>& a, const Scalar_<_Tp>& b)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:2191:14: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Scalar_<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:2215:14: note: candidate: template<class _Tp> cv::Scalar_<_Tp> cv::operator-(const cv::Scalar_<_Tp>&)
+ Scalar_<_Tp> operator - (const Scalar_<_Tp>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:2215:14: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::Scalar_<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:59:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/mat.hpp:3561:20: note: candidate: cv::MatExpr cv::operator-(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator - (const Mat& a, const Mat& b);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3561:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::Mat&’
+/usr/include/opencv2/core/mat.hpp:3562:20: note: candidate: cv::MatExpr cv::operator-(const cv::Mat&, const Scalar&)
+ CV_EXPORTS MatExpr operator - (const Mat& a, const Scalar& s);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3562:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::Mat&’
+/usr/include/opencv2/core/mat.hpp:3563:20: note: candidate: cv::MatExpr cv::operator-(const Scalar&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator - (const Scalar& s, const Mat& a);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3563:20: note:   no known conversion for argument 2 from ‘cv::Vec3b {aka cv::Vec<unsigned char, 3>}’ to ‘const cv::Mat&’
+/usr/include/opencv2/core/mat.hpp:3564:20: note: candidate: cv::MatExpr cv::operator-(const cv::MatExpr&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator - (const MatExpr& e, const Mat& m);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3564:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatExpr&’
+/usr/include/opencv2/core/mat.hpp:3565:20: note: candidate: cv::MatExpr cv::operator-(const cv::Mat&, const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator - (const Mat& m, const MatExpr& e);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3565:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::Mat&’
+/usr/include/opencv2/core/mat.hpp:3566:20: note: candidate: cv::MatExpr cv::operator-(const cv::MatExpr&, const Scalar&)
+ CV_EXPORTS MatExpr operator - (const MatExpr& e, const Scalar& s);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3566:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatExpr&’
+/usr/include/opencv2/core/mat.hpp:3567:20: note: candidate: cv::MatExpr cv::operator-(const Scalar&, const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator - (const Scalar& s, const MatExpr& e);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3567:20: note:   no known conversion for argument 2 from ‘cv::Vec3b {aka cv::Vec<unsigned char, 3>}’ to ‘const cv::MatExpr&’
+/usr/include/opencv2/core/mat.hpp:3568:20: note: candidate: cv::MatExpr cv::operator-(const cv::MatExpr&, const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator - (const MatExpr& e1, const MatExpr& e2);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3568:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatExpr&’
+/usr/include/opencv2/core/mat.hpp:3570:20: note: candidate: cv::MatExpr cv::operator-(const cv::Mat&)
+ CV_EXPORTS MatExpr operator - (const Mat& m);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3570:20: note:   candidate expects 1 argument, 2 provided
+/usr/include/opencv2/core/mat.hpp:3571:20: note: candidate: cv::MatExpr cv::operator-(const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator - (const MatExpr& e);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3571:20: note:   candidate expects 1 argument, 2 provided
+In file included from /usr/include/opencv2/core/mat.hpp:3659:0,
+                 from /usr/include/opencv2/core.hpp:59,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/mat.inl.hpp:2730:11: note: candidate: ptrdiff_t cv::operator-(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ ptrdiff_t operator - (const MatConstIterator& b, const MatConstIterator& a)
+           ^~~~~~~~
+/usr/include/opencv2/core/mat.inl.hpp:2730:11: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatConstIterator&’
+/usr/include/opencv2/core/mat.inl.hpp:2755:18: note: candidate: cv::MatConstIterator cv::operator-(const cv::MatConstIterator&, ptrdiff_t)
+ MatConstIterator operator - (const MatConstIterator& a, ptrdiff_t ofs)
+                  ^~~~~~~~
+/usr/include/opencv2/core/mat.inl.hpp:2755:18: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatConstIterator&’
+/usr/include/opencv2/core/mat.inl.hpp:2903:24: note: candidate: template<class _Tp> cv::MatConstIterator_<_Tp> cv::operator-(const cv::MatConstIterator_<_Tp>&, ptrdiff_t)
+ MatConstIterator_<_Tp> operator - (const MatConstIterator_<_Tp>& a, ptrdiff_t ofs)
+                        ^~~~~~~~
+/usr/include/opencv2/core/mat.inl.hpp:2903:24: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::MatConstIterator_<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core/mat.hpp:3659:0,
+                 from /usr/include/opencv2/core.hpp:59,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/mat.inl.hpp:3040:19: note: candidate: template<class _Tp> cv::MatIterator_<_Tp> cv::operator-(const cv::MatIterator_<_Tp>&, ptrdiff_t)
+ MatIterator_<_Tp> operator - (const MatIterator_<_Tp>& a, ptrdiff_t ofs)
+                   ^~~~~~~~
+/usr/include/opencv2/core/mat.inl.hpp:3040:19: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::MatIterator_<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:60:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/persistence.hpp:1302:11: note: candidate: ptrdiff_t cv::operator-(const cv::FileNodeIterator&, const cv::FileNodeIterator&)
+ ptrdiff_t operator - (const FileNodeIterator& it1, const FileNodeIterator& it2)
+           ^~~~~~~~
+/usr/include/opencv2/core/persistence.hpp:1302:11: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::FileNodeIterator&’
+In file included from /usr/include/opencv2/core/utility.hpp:1237:0,
+                 from /usr/include/opencv2/core.hpp:3261,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/core_c.h:3157:41: note: candidate: template<class _Tp> ptrdiff_t cv::operator-(const cv::SeqIterator<_Tp>&, const cv::SeqIterator<_Tp>&)
+ template<typename _Tp> inline ptrdiff_t operator - (const SeqIterator<_Tp>& a,
+                                         ^~~~~~~~
+/usr/include/opencv2/core/core_c.h:3157:41: note:   template argument deduction/substitution failed:
+starter.cpp:158:55: note:   mismatched types ‘const cv::SeqIterator<_Tp>’ and ‘float’
+             sol.val[1] = (uchar)(((float)pix.val[1] - A) / chosenT + A);
+                                                       ^
+starter.cpp:159:53: error: no match for ‘operator-’ (operand types are ‘float’ and ‘cv::Vec3b {aka cv::Vec<unsigned char, 3>}’)
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                   ~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/opencv2/core.hpp:57:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/matx.hpp:1212:17: note: candidate: template<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator-(const cv::Matx<_Tp, m, n>&, const cv::Matx<_Tp, m, n>&)
+ Matx<_Tp, m, n> operator - (const Matx<_Tp, m, n>& a, const Matx<_Tp, m, n>& b)
+                 ^~~~~~~~
+/usr/include/opencv2/core/matx.hpp:1212:17: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Matx<_Tp, m, n>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:57:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/matx.hpp:1278:17: note: candidate: template<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator-(const cv::Matx<_Tp, m, n>&)
+ Matx<_Tp, m, n> operator - (const Matx<_Tp, m, n>& a)
+                 ^~~~~~~~
+/usr/include/opencv2/core/matx.hpp:1278:17: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Matx<_Tp, m, n>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:57:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/matx.hpp:1340:14: note: candidate: template<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator-(const cv::Vec<_Tp, m>&, const cv::Vec<_Tp, m>&)
+ Vec<_Tp, cn> operator - (const Vec<_Tp, cn>& a, const Vec<_Tp, cn>& b)
+              ^~~~~~~~
+/usr/include/opencv2/core/matx.hpp:1340:14: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Vec<_Tp, m>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:57:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/matx.hpp:1451:14: note: candidate: template<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator-(const cv::Vec<_Tp, m>&)
+ Vec<_Tp, cn> operator - (const Vec<_Tp, cn>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/matx.hpp:1451:14: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Vec<_Tp, m>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1019:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator-(const cv::Complex<_Tp>&, const cv::Complex<_Tp>&)
+ Complex<_Tp> operator - (const Complex<_Tp>& a, const Complex<_Tp>& b)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1019:14: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Complex<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1032:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator-(const cv::Complex<_Tp>&)
+ Complex<_Tp> operator - (const Complex<_Tp>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1032:14: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Complex<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1062:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator-(const cv::Complex<_Tp>&, _Tp)
+ Complex<_Tp> operator - (const Complex<_Tp>& a, _Tp b)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1062:14: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Complex<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1072:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator-(_Tp, const cv::Complex<_Tp>&)
+ Complex<_Tp> operator - (_Tp b, const Complex<_Tp>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1072:14: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   ‘cv::Vec3b {aka cv::Vec<unsigned char, 3>}’ is not derived from ‘const cv::Complex<_Tp>’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1293:13: note: candidate: template<class _Tp> cv::Point_<_Tp> cv::operator-(const cv::Point_<_Tp>&, const cv::Point_<_Tp>&)
+ Point_<_Tp> operator - (const Point_<_Tp>& a, const Point_<_Tp>& b)
+             ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1293:13: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Point_<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1299:13: note: candidate: template<class _Tp> cv::Point_<_Tp> cv::operator-(const cv::Point_<_Tp>&)
+ Point_<_Tp> operator - (const Point_<_Tp>& a)
+             ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1299:13: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Point_<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1545:14: note: candidate: template<class _Tp> cv::Point3_<_Tp> cv::operator-(const cv::Point3_<_Tp>&, const cv::Point3_<_Tp>&)
+ Point3_<_Tp> operator - (const Point3_<_Tp>& a, const Point3_<_Tp>& b)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1545:14: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Point3_<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1551:14: note: candidate: template<class _Tp> cv::Point3_<_Tp> cv::operator-(const cv::Point3_<_Tp>&)
+ Point3_<_Tp> operator - (const Point3_<_Tp>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1551:14: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Point3_<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1735:12: note: candidate: template<class _Tp> cv::Size_<_Tp> cv::operator-(const cv::Size_<_Tp>&, const cv::Size_<_Tp>&)
+ Size_<_Tp> operator - (const Size_<_Tp>& a, const Size_<_Tp>& b)
+            ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1735:12: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Size_<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:1921:12: note: candidate: template<class _Tp> cv::Rect_<_Tp> cv::operator-(const cv::Rect_<_Tp>&, const cv::Point_<_Tp>&)
+ Rect_<_Tp> operator - (const Rect_<_Tp>& a, const Point_<_Tp>& b)
+            ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:1921:12: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Rect_<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:2054:7: note: candidate: cv::Range cv::operator-(const cv::Range&, int)
+ Range operator - (const Range& r1, int delta)
+       ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:2054:7: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::Range&’
+/usr/include/opencv2/core/types.hpp:2191:14: note: candidate: template<class _Tp> cv::Scalar_<_Tp> cv::operator-(const cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)
+ Scalar_<_Tp> operator - (const Scalar_<_Tp>& a, const Scalar_<_Tp>& b)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:2191:14: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Scalar_<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:58:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/types.hpp:2215:14: note: candidate: template<class _Tp> cv::Scalar_<_Tp> cv::operator-(const cv::Scalar_<_Tp>&)
+ Scalar_<_Tp> operator - (const Scalar_<_Tp>& a)
+              ^~~~~~~~
+/usr/include/opencv2/core/types.hpp:2215:14: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::Scalar_<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:59:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/mat.hpp:3561:20: note: candidate: cv::MatExpr cv::operator-(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator - (const Mat& a, const Mat& b);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3561:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::Mat&’
+/usr/include/opencv2/core/mat.hpp:3562:20: note: candidate: cv::MatExpr cv::operator-(const cv::Mat&, const Scalar&)
+ CV_EXPORTS MatExpr operator - (const Mat& a, const Scalar& s);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3562:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::Mat&’
+/usr/include/opencv2/core/mat.hpp:3563:20: note: candidate: cv::MatExpr cv::operator-(const Scalar&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator - (const Scalar& s, const Mat& a);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3563:20: note:   no known conversion for argument 2 from ‘cv::Vec3b {aka cv::Vec<unsigned char, 3>}’ to ‘const cv::Mat&’
+/usr/include/opencv2/core/mat.hpp:3564:20: note: candidate: cv::MatExpr cv::operator-(const cv::MatExpr&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator - (const MatExpr& e, const Mat& m);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3564:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatExpr&’
+/usr/include/opencv2/core/mat.hpp:3565:20: note: candidate: cv::MatExpr cv::operator-(const cv::Mat&, const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator - (const Mat& m, const MatExpr& e);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3565:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::Mat&’
+/usr/include/opencv2/core/mat.hpp:3566:20: note: candidate: cv::MatExpr cv::operator-(const cv::MatExpr&, const Scalar&)
+ CV_EXPORTS MatExpr operator - (const MatExpr& e, const Scalar& s);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3566:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatExpr&’
+/usr/include/opencv2/core/mat.hpp:3567:20: note: candidate: cv::MatExpr cv::operator-(const Scalar&, const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator - (const Scalar& s, const MatExpr& e);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3567:20: note:   no known conversion for argument 2 from ‘cv::Vec3b {aka cv::Vec<unsigned char, 3>}’ to ‘const cv::MatExpr&’
+/usr/include/opencv2/core/mat.hpp:3568:20: note: candidate: cv::MatExpr cv::operator-(const cv::MatExpr&, const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator - (const MatExpr& e1, const MatExpr& e2);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3568:20: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatExpr&’
+/usr/include/opencv2/core/mat.hpp:3570:20: note: candidate: cv::MatExpr cv::operator-(const cv::Mat&)
+ CV_EXPORTS MatExpr operator - (const Mat& m);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3570:20: note:   candidate expects 1 argument, 2 provided
+/usr/include/opencv2/core/mat.hpp:3571:20: note: candidate: cv::MatExpr cv::operator-(const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator - (const MatExpr& e);
+                    ^~~~~~~~
+/usr/include/opencv2/core/mat.hpp:3571:20: note:   candidate expects 1 argument, 2 provided
+In file included from /usr/include/opencv2/core/mat.hpp:3659:0,
+                 from /usr/include/opencv2/core.hpp:59,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/mat.inl.hpp:2730:11: note: candidate: ptrdiff_t cv::operator-(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ ptrdiff_t operator - (const MatConstIterator& b, const MatConstIterator& a)
+           ^~~~~~~~
+/usr/include/opencv2/core/mat.inl.hpp:2730:11: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatConstIterator&’
+/usr/include/opencv2/core/mat.inl.hpp:2755:18: note: candidate: cv::MatConstIterator cv::operator-(const cv::MatConstIterator&, ptrdiff_t)
+ MatConstIterator operator - (const MatConstIterator& a, ptrdiff_t ofs)
+                  ^~~~~~~~
+/usr/include/opencv2/core/mat.inl.hpp:2755:18: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::MatConstIterator&’
+/usr/include/opencv2/core/mat.inl.hpp:2903:24: note: candidate: template<class _Tp> cv::MatConstIterator_<_Tp> cv::operator-(const cv::MatConstIterator_<_Tp>&, ptrdiff_t)
+ MatConstIterator_<_Tp> operator - (const MatConstIterator_<_Tp>& a, ptrdiff_t ofs)
+                        ^~~~~~~~
+/usr/include/opencv2/core/mat.inl.hpp:2903:24: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::MatConstIterator_<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core/mat.hpp:3659:0,
+                 from /usr/include/opencv2/core.hpp:59,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/mat.inl.hpp:3040:19: note: candidate: template<class _Tp> cv::MatIterator_<_Tp> cv::operator-(const cv::MatIterator_<_Tp>&, ptrdiff_t)
+ MatIterator_<_Tp> operator - (const MatIterator_<_Tp>& a, ptrdiff_t ofs)
+                   ^~~~~~~~
+/usr/include/opencv2/core/mat.inl.hpp:3040:19: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::MatIterator_<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
+In file included from /usr/include/opencv2/core.hpp:60:0,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/persistence.hpp:1302:11: note: candidate: ptrdiff_t cv::operator-(const cv::FileNodeIterator&, const cv::FileNodeIterator&)
+ ptrdiff_t operator - (const FileNodeIterator& it1, const FileNodeIterator& it2)
+           ^~~~~~~~
+/usr/include/opencv2/core/persistence.hpp:1302:11: note:   no known conversion for argument 1 from ‘float’ to ‘const cv::FileNodeIterator&’
+In file included from /usr/include/opencv2/core/utility.hpp:1237:0,
+                 from /usr/include/opencv2/core.hpp:3261,
+                 from /usr/include/opencv2/core/core.hpp:48,
+                 from starter.cpp:6:
+/usr/include/opencv2/core/core_c.h:3157:41: note: candidate: template<class _Tp> ptrdiff_t cv::operator-(const cv::SeqIterator<_Tp>&, const cv::SeqIterator<_Tp>&)
+ template<typename _Tp> inline ptrdiff_t operator - (const SeqIterator<_Tp>& a,
+                                         ^~~~~~~~
+/usr/include/opencv2/core/core_c.h:3157:41: note:   template argument deduction/substitution failed:
+starter.cpp:159:55: note:   mismatched types ‘const cv::SeqIterator<_Tp>’ and ‘float’
+             sol.val[2] = (uchar)(((float)pix.val[2] - A) / chosenT + A);
+                                                       ^
