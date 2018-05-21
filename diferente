@@ -1,0 +1,6 @@
+249,250c249,250
+<     imshow("Rectified", rectified);
+<     // imshow("Transmission", tmat);
+---
+>     // imshow("Rectified", rectified);
+>     imshow("Transmission", tmat);
